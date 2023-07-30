@@ -1,207 +1,210 @@
-body{
-    font-size: 16px;
-    margin:0;
+*{
+    margin: 0;
     padding: 0;
-    background-color:#6C7D55;
-    font-family: 'Roboto', sans-serif;
-z-index: 1;
+    font-family: 'Ubuntu', sans-serif;
 }
-@media (max-width:1200px) {
-    body{
-        font-size: 14px;
-        
-    }
+.container{
+    width: 100vw;
+    height: 100vh;
 }
-@media (max-width:1000px) {
-    body{
-        font-size: 12px;
-        
-    }
-}
-@media (max-width:800px) {
-    body{
-        font-size: 10px;
-        
-    }
-}
-@media (max-width:600px) {
-    body{
-        font-size: 8px;
-        
-    }
-}
-@media (max-width:400px) {
-    body{
-        font-size: 7px;
-        
-    }
-}
-@media (max-width:200px) {
-    body{
-        font-size: 6px;
-        
-    }
-}
-@keyframes bounce {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		-webkit-transform: translateY(-1.25rem);
-		transform: translateY(-1.25rem);
-	}
-
-	80% {
-		-webkit-transform: translateY(-0.75rem);
-		transform: translateY(-0.75rem);
-	}
-}
-.main-container{
-    box-shadow: 0 0 5rem #31441e;
-    z-index: 3;
-    margin:6rem auto;
-    padding: 0;
-    width: 80vw;
+.container,.logo{
     display: flex;
-    height: 80vh;
-    border-radius: 4rem 4rem 4rem 4rem;
+    flex-flow: row wrap;
+    
+}
+.left{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: 40vw;
+    z-index: 1;
+}
+.image{
+    padding: 0;
+    background: url('./imgs/vecteezy_email-service-modern-flat-concept-for-web-banner-design-man_5868042.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+   
 
 }
-.picture-logo{
-    box-sizing: border-box;
-    height: 80vh;
-    position: flex;
-    border-radius: 4rem 0 0 4rem;
+.left-footer{
     text-align: center;
-}
-
-.picture-logo img{
-    filter:brightness(65%);
-    height: 80vh;
-    object-fit: cover;
-    width: 35vw;
-    border-radius: 4rem 0 0 4rem;
-
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color:#130533;
 }
 .logo{
-    letter-spacing: 1.25rem;
-    position:relative;
-    top: -75%;
-    
-    color:#F97D23;
-    font-size: 5em;
-    z-index: 2;
+    font-size: 36px;
+    height: auto;
+    position: relative;
+    top:0vh;
+    left: 0;
+    gap:16px;
+    padding: 15px 15px;
+    justify-content:flex-start;
+    align-items:center;
 }
-.logo-background{
-    border: 0.25rem solid black;
-    position:relative;
-    top: -100%;
-    box-sizing: border-box;
-    height: 6rem;
-    width: 35vw;
-    overflow: hidden;
-    background-color: black;
-    opacity: 0.55;
-    box-shadow: 0 0 0.75rem black;
-}
-.sign-up-container{
-    background-color: white;
-    width: 100%;
+.symbol{
+    height: 5vh;
+    margin: 0;
     padding: 0;
-    margin: 0;
-    border-radius:  0 4rem 4rem 0;
-
-
 }
-.sign-up-container-header{
-    background-color: white;
-    width: 100%;
-    margin: 0;
-    height: 30%;
-    border-radius:  0 4rem 4rem 0;
-
+.right{
+    box-sizing: border-box;
+    width: 60vw;
+    background-color: #390DA0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
     
 }
-.sign-up-container-header h2{
-    color:black;
-    letter-spacing: 0.1rem;
-    margin: 0;
-    padding: 3rem 4rem 1.25rem 4rem;
-    font-weight: 300;
-}.sign-up-container-header h2 i{
-    color:#718353;
-}
-
-.sign-up-form{
-    height: 50%;
-
-}
-
-.sign-up-form form{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 2rem;
-    padding-left: 2rem;
-
-    box-shadow: 0 0.75rem 1.25rem grey;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+.form{
     box-sizing: border-box;
-}
-.sign-up-form legend{
-    text-align: center;
-    font-size:3rem;
-    width: 100%;
-   font-weight: 300;
-}
-.sign-up-form .form-item{
-    width: 45%;
+    
+    background-color: #2b0d73;
+    font-size: 36px;
     display: flex;
-    flex-direction: column;
-    color:	#848884;
-    height: 1.75rem;
+    flex-flow: row wrap;
+    gap:40px;
+    margin: auto 0;
+    width: 100%;
+    padding: 30px;
+    padding-left: 80px;
+    box-shadow: 0 0 30px black;
 }
-.sign-up-form input{
-    border: none;
-    border-bottom: 0.15rem solid #718353;
-    outline:none;
-    padding: 5px;
-    line-height: 1.5rem;
-    font-size: 1.25rem;
+.form-header{
+    color:whitesmoke;
+    text-transform: uppercase;
+    text-align: start;
+    font-weight: 800;
+
 }
-textarea:focus, input:focus{
+.form-header{
+    width: 100%;
+}
+.form-item{
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.form input{
+    width: 85%;
+    line-height: 40px;
+    font-size:14px;
     outline: none;
-    border: 0.25rem solid #F97D23;
-    border-radius: 0.75rem;
-}textarea:hover, input:hover{
     border:none;
-    border-bottom: 0.275rem solid #718353;
+    background-color: #2b0d73;
+    color:#777;
+    border-bottom: 2px solid ;
+    
 }
-.confirm input{
-    background-color: #F97D23;
-    border:none;
-    padding: 0.75rem 3rem;
-    font-size: 1.25rem;
-    border-radius: 1rem;
+[type='submit']{
+    background-color: whitesmoke;
+    font-size: 24px;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
     cursor: pointer;
 }
-
-
-.confirm{
-    text-align: center;
-    padding:2rem;
+[type='submit']:hover{
+    background-color: #FC721A;
+    color:whitesmoke;
+    
 }
-
-.confirm input:hover{
-    background-color: #718353;
-    animation: bounce 1s;
+::placeholder{
+    color:#777;
+    font-size: 12px;
+    text-transform: uppercase;
 }
-.confirm a{
-    color:#F97D23;
+.log-in{
+    width: 100%;
+}
+.log-in-link{
+    color:whitesmoke; 
+    font-size: 24px;
+    font-weight: 300;
+}
+.log-in-link a{
+    padding-left: 10px;
     text-decoration: none;
+    color:#FC721A;
+    font-size: 24px;
+    font-weight: 300;
+}
+.log-in-link a:hover{
+    color:whitesmoke;
+}
+
+@media only screen and (max-width:600px) {
+    *{
+        box-sizing: border-box;
+    }
+    .container,.logo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .right{
+        margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        box-sizing: border-box;
+        margin: 0;
+        padding-left: 30px;
+        width: 100%;
+        padding: 10px;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+
+        }
+    .form-header{
+        font-size: 24px;
+        text-align: center;
+    }
+    .form-item{
+        width: 90%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .form input{
+        width: 90%;
+        line-height: 30px;
+    }
+    
+    .log-in{
+        width: 100%;
+    }
+    .log-in-link, .log-in-link a{
+        color:whitesmoke; 
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .log-in-link a{
+        color:#FC721A;
+        
+    }
+    
+
+
+
+
+
+
 }
